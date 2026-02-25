@@ -1,1 +1,22 @@
+<style>
+.accordion {
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
 
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+</style>
+
+<div class="accordion" onclick="this.nextElementSibling.style.maxHeight='200px'">
+  Click to See Research Details
+</div>
+<div class="panel">
+  <p>All your detailed explanation goes here.</p>
+</div>
